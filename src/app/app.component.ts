@@ -16,4 +16,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.listaDeCompra = this.listaService.getListaDeCompra();
   }
+
+  editarItem(item: Item) {
+    console.log(item);
+  }
 }
